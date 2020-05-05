@@ -73,7 +73,7 @@ const run = async () => {
 
 	const octokit = new Octokit({ auth: `token ${githubToken}` });
 	const commit = await octokit.repos.getCommit(params);
-	octokit.request('GET /repos/:owner/:repo/actions/runs/:runId/jobs', {
+	await octokit.request('GET /repos/:owner/:repo/actions/runs/:runId/jobs', {
 		owner: owner,
 		repo: repo,
 		runId: runId
@@ -113,7 +113,7 @@ const run = async () => {
 				},
 				{
 					name: "Build time:",
-					value: "`" + buildTime + "`"
+					value: buildTime
 				},
 				{
 					name: "Files changed:",
