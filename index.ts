@@ -104,6 +104,10 @@ const run = async () => {
 					value: "`" + eventName.toUpperCase() + "`"
 				},
 				{
+					name: "Environment:",
+					value: "`" + summary.toUpperCase() + "`"
+				},
+				{
 					name: "Commit message:",
 					value: escapeMarkdownTokens(commit.data.commit.message)
 				},
