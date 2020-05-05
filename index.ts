@@ -112,12 +112,12 @@ const run = async () => {
 					value: `[${branchUrl}](${branchUrl})`
 				},
 				{
-					name: "Files changed:",
-					value: filesToDisplay
+					name: "Build time:",
+					value: "`" + buildTime + "`"
 				},
 				{
-					name: "Build time:",
-					value: buildTime
+					name: "Files changed:",
+					value: filesToDisplay
 				}
 			],
 			potentialAction: [
