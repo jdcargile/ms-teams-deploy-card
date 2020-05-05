@@ -1,7 +1,7 @@
 import moment from "moment-timezone";
 const { Octokit } = require("@octokit/rest");
 const octokit = new Octokit({
-	auth: "865ab938ca7dd1728b92ba882cbd0fd8d5932cc0"
+	auth: "<github PAT>"
 });
 //const runParams = { owner: "control4", repo: "dealer-portal", ref: "develop", run_id: 95794734 };
 //const workflowRun = octokit.actions.getWorkflowRun(runParams).then((data: any) => console.log(data));
